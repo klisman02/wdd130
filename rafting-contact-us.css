@@ -1,0 +1,161 @@
+    /* rafting.css */
+
+    :root {
+    --primary-color: #16425B;
+    --secondary-color: #81C3D7;
+    --accent1-color: #F9DC5C;
+    --accent2-color: #F4A259;
+
+    --heading-font: 'Barlow', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+    }
+
+    body {
+    font-family: var(--text-font);
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    }
+
+    header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+    header img {
+    height: 50px;
+    }
+
+    nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    }
+
+    nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    }
+
+    nav a:hover,
+    nav a.active {
+    text-decoration: underline;
+    }
+
+    main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    }
+
+    h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    }
+
+    .contact-info, .team, .contact-form {
+    margin-bottom: 40px;
+    }
+
+    iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 1rem;
+    }
+
+    .profiles {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .profiles figure {
+    text-align: center;
+    max-width: 200px;
+    }
+
+    .profiles img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    }
+
+    fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    }
+
+    label {
+    font-weight: 600;
+    }
+
+    button[type="submit"] {
+    background-color: var(--accent1-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: start;
+    }
+
+    button[type="submit"]:hover {
+    background-color: var(--accent2-color);
+    }
+
+    footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    }
+
+    footer a {
+    color: var(--accent1-color);
+    text-decoration: none;
+    }
+
+    footer a:hover {
+    text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+    }
