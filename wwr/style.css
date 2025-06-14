@@ -1,0 +1,82 @@
+    /* Google Fonts */
+    body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #023047;
+    }
+
+    h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #023047;
+    }
+
+    header {
+    background-color: #219ebc;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+
+    .logo {
+    height: 100px;
+    }
+
+    nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    }
+
+    nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    }
+
+    nav a:hover {
+    color: #ffb703;
+    }
+
+    .hero {
+    background: url('../images/rafting-hero.jpg') no-repeat center center/cover;
+    padding: 8rem 2rem;
+    text-align: center;
+    color: white;
+    background-color: #023047;
+    }
+
+    .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    }
+
+    .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    }
+
+    .btn {
+    background-color: #ffb703;
+    color: #023047;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    }
+
+    .btn:hover {
+    background-color: #fb8500;
+    }
+
+    footer {
+    background-color: #023047;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    }
