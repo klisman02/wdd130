@@ -1,117 +1,177 @@
-/* General Styles */
-body {
+    /* General Styles */
+    body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
     color: #023047;
-}
+    }
 
-h1, h2, h3 {
+    h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
-    color: #023047;
-}
+    }
 
-a {
+    a {
     color: inherit;
     text-decoration: none;
-}
+    }
 
-img {
+    img {
     max-width: 100%;
-}
+    display: block;
+    }
 
-/* Header Styles - GRID */
-header {
+    .logo {
+    max-width: 120px;
+    }
+
+    /* Header Styles */
+    header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     background-color: #219ebc;
     padding: 1rem 2rem;
-}
+    }
 
-.logo {
-    height: 80px;
-}
-
-nav ul {
+    nav ul {
+    list-style: none;
     display: flex;
     justify-content: flex-end;
-    list-style: none;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    color: #ffffff;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #ffb703;
-}
-
-/* Hero Section */
-.hero {
-    background: url('./images/rafting-hero.jpg') no-repeat center center/cover;
-    padding: 6rem 2rem;
-    text-align: center;
-    color: #ffffff;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-}
-
-/* History Section */
-.history {
-    padding: 3rem 2rem;
-    text-align: center;
-}
-
-/* Adventures Section */
-.adventures {
-    padding: 3rem 2rem;
-}
-
-.adventure-gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     gap: 1rem;
-}
+    }
 
-.adventure-gallery figure {
-    flex: 1 1 200px;
-    max-width: 250px;
-}
+    nav a {
+    font-weight: bold;
+    color: #ffffff;
+    }
 
-/* Footer Styles */
-footer {
+    nav a.active {
+    text-decoration: underline;
+    }
+
+    /* Hero Styles */
+    .hero {
+    position: relative;
+    background: url('./images/rafting-hero.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 8rem 1rem;
+    color: #ffffff;
+    }
+
+    .hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 8px;
+    }
+
+    .hero h1 {
+    font-size: 3rem;
+    }
+
+    .hero p {
+    font-size: 1.25rem;
+    }
+
+    .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #ffb703;
+    color: #023047;
+    font-weight: bold;
+    border-radius: 5px;
+    }
+
+    .btn:hover{
+        background-color: #b68304;
+        transition: .8s;
+    }
+
+    /* Additional Grid Section */
+    .about-us-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+    gap: 2rem;
+    }
+
+    .about-us-grid .grid-item {
+    background-color: #f1f1f1;
+    padding: 1.5rem;
+    border-radius: 8px;
+    }
+
+    .about-us-grid h2 {
+    margin-top: 1rem;
+    }
+
+    /* Newsletter Styles */
+    .newsletter {
+    padding: 3rem;
+    text-align: center;
+    background-color: #219ebc;
+    color: #ffffff;
+    }
+
+    .newsletter .form-group {
+    margin: 1rem 0;
+    }
+
+    .newsletter label {
+    display: block;
+    font-weight: bold;
+    }
+
+    .newsletter input {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 0.25rem 0;
+    }
+
+    .newsletter .btn {
+    background-color: #ffb703;
+    color: #023047;
+    }
+    .newsletter .btn:hover{
+        background-color: #b68304;
+        transition: .8s;        
+    }
+
+    /* Footer Styles */
+    footer {
     background-color: #023047;
     color: #ffffff;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    text-align: center;
+    padding: 1rem;
+    }
 
-footer p {
-    margin: 0;
-}
+    /* TRIP CSS */
+    /* Trip Page Specific Styles */
+    .trips-hero {
+    background: url('./images/trips-hero.jpg') no-repeat center center/cover;
+    }
 
-footer .social-icons {
-    display: flex;
-    gap: 1rem;
-}
+    .trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 3rem;
+    gap: 2rem;
+    }
 
-footer .social-icons img {
-    width: 24px;
-    height: 24px;
-}
+    .trip-card {
+    background-color: #f1f1f1;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    }
+
+    .trip-card h2 {
+    margin: 1rem 0;
+    }
+
+    .trip-card p {
+    font-size: 1rem;
+    }
+

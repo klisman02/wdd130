@@ -2,9 +2,10 @@
     <html lang="en">
     <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Rapid Rush Adventures - Experience the thrill of whitewater rafting trips, book your adventure and explore the best rapids with expert guides.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Rapid Rush Adventures</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Rapid Rush Adventures | Home</title>
+    <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -12,21 +13,53 @@
         <img src="./images/logo.png" alt="Rapid Rush Adventures Logo" class="logo" />
         <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="trips.html">Trips</a></li>
-            <li><a href="./contact-us.html">Contact</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
         </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
         <h1>Experience the Thrill of Whitewater Rafting!</h1>
-        <p>Join Rapid Rush Adventures for an unforgettable ride down the river.</p>
-        <a href="trips.html" class="btn">Explore Trips</a>
-        </section>
-    </main>
+        <p>Join Rapid Rush Adventures for an unforgettable ride down the river, with trips tailored for all levels of experience.</p>
+        <a href="trips.html" class="btn">Explore Our Trips</a>
+        </div>
+    </section>
+
+    <!-- Additional Content Section -->
+    <section class="about-us-grid">
+        <div class="grid-item">
+        <img src="./images/rafting-1.jpg" alt="Rafters going down a river" />
+        <h2>Why Choose Us?</h2>
+        <p>With expert guides and top-notch equipment, we ensure a safe and thrilling experience for families, groups, and adventurers alike!</p>
+        </div>
+        <div class="grid-item">
+        <img src="./images/rafting-2.jpg" alt="People enjoying a rafting adventure" />
+        <h2>Our Commitment</h2>
+        <p>We are passionate about providing memorable trips and a deep respect for nature while prioritizing safety and fun for every guest!</p>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Stay in the Loop</h2>
+        <p>Sign up for our newsletter and get the latest trips, special offers, and adventure tips delivered right to your inbox!</p>
+        <form action="#" method="POST">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input id="name" name="name" type="text" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+        </form>
+    </section>
 
     <footer>
         <p>&copy; 2025 Rapid Rush Adventures. All rights reserved.</p>
