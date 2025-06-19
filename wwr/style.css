@@ -209,17 +209,17 @@ footer .social-icons img:hover {
 /* Main Hero Images */
 .logo-hero {
     display: block;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     margin: 0 auto 2rem auto;
     border-radius: 8px;
 }
 
 .logo-guide {
-    float: left;
-    max-width: 150px;
+    display: block;
+    max-width: 500px;
     height: auto;
-    margin: 0 1rem 1rem 0;
+    margin: 1rem auto;
     border-radius: 8px;
 }
 
