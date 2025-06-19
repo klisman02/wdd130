@@ -147,6 +147,33 @@
     padding: 1rem;
     }
 
+    /* ========================= */
+/* FOOTER SPECIFIC STYLES    */
+/* ========================= */
+
+footer .social-icons {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .social-icons a {
+    display: inline-block;
+}
+
+footer .social-icons img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.1);
+}
+
     /* TRIP CSS */
     /* Trip Page Specific Styles */
     .trips-hero {
@@ -174,4 +201,55 @@
     .trip-card p {
     font-size: 1rem;
     }
+
+    /* ========================= */
+/* ABOUT PAGE SPECIFIC STYLES */
+/* ========================= */
+
+/* Main Hero Images */
+.logo-hero {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 2rem auto;
+    border-radius: 8px;
+}
+
+.logo-guide {
+    float: left;
+    max-width: 150px;
+    height: auto;
+    margin: 0 1rem 1rem 0;
+    border-radius: 8px;
+}
+
+/* History Section */
+.history {
+    padding: 2rem;
+}
+
+/* Adventure Gallery */
+.adventures {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.adventure-gallery figure {
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+
+.adventure-gallery figure img {
+    border-radius: 8px;
+    object-fit: cover;
+    width: 100%;
+    height: 160px;
+}
 
